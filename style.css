@@ -47,9 +47,11 @@ nav a:hover, nav a.current {
   padding-bottom: calc(0.5em - 4px);
   background-color: oklch(from var(--color-accent) 95% 5% h); /* Optional */
 }
+
+
 /* Step 3 */
 form {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 2fr; /* Allocates 1 fraction of the space to labels and 2 fractions to inputs */
   gap: 1em; /* Adds space between grid items */
   max-width: 600px; /* Maximum width of the form */
@@ -75,6 +77,9 @@ input[type="email"], input[type="text"], textarea, button {
 form {
   font-family: inherit; /* Inherits the font family from the body or root element */
 }
+
+
+
 /* Step 4 */
 nav a[href="index.html"] {
   border-bottom: 4px solid #ccc; /* Gray bottom border */

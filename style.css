@@ -8,3 +8,27 @@ body {
     padding: 1rem;
     margin-inline: max(1em, (100% - 100ch) / 2);
   }
+
+  nav {
+    display: flex;                   
+    justify-content: space-around;    
+    align-items: center;            
+    /* background: #f8f8f8;           */
+    padding: 0.5em;
+
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav ul, nav li {
+  display: contents;
+}
+
+nav a {
+  text-decoration: none; /* Removes underline from links */
+  text-align: center; /* Centers text within links */
+  padding: 0.5em; /* Adds padding around the links for better spacing */
+  color: inherit; /* Ensures links use the text color of their parent */
+}

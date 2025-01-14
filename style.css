@@ -52,10 +52,13 @@ nav a:hover, nav a.current {
 /* Step 3 */
 form {
   display: block;
+  width: 100%;
+  box-sizing: border-box;
   grid-template-columns: 1fr 2fr; /* Allocates 1 fraction of the space to labels and 2 fractions to inputs */
   gap: 1em; /* Adds space between grid items */
   max-width: 600px; /* Maximum width of the form */
   margin: auto; /* Centers the form */
+  margin-block: 20px;
 }
 
 .form-group {

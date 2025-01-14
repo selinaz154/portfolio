@@ -56,3 +56,16 @@ nav a[href="index.html"] {
 nav a.current {
   border-bottom: 3px solid #ff00ff; 
 }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 20px; /* Adjust the space between the projects */
+  padding: 20px; /* Optional: adds padding inside the projects container */
+}
+
+.project {
+  background: #f0f0f0; /* Example background color for visibility */
+  padding: 10px; /* Padding inside each project */
+  border: 1px solid #ccc; /* Border for each project */
+}

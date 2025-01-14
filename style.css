@@ -47,3 +47,8 @@ nav a:hover, nav a.current {
   padding-bottom: calc(0.5em - 4px);
   background-color: oklch(from var(--color-accent) 95% 5% h); /* Optional */
 }
+
+nav a[href="index.html"] {
+  border-bottom: 4px solid #ccc; /* Gray bottom border */
+  padding-bottom: calc(0.5em - 4px); /* Adjust padding to accommodate border */
+}

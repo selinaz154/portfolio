@@ -32,3 +32,12 @@ nav a {
   padding: 0.5em; /* Adds padding around the links for better spacing */
   color: inherit; /* Ensures links use the text color of their parent */
 }
+
+:root {
+  --color-accent: oklch(65% 50% 0); /* Define the accent color */
+}
+
+nav a:hover, nav a.current {
+  border-bottom: 4px solid var(--color-accent); /* Thick bottom border using accent color */
+  padding-bottom: calc(0.5em - 4px); /* Adjust padding to compensate for the border thickness */
+}

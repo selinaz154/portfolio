@@ -18,19 +18,25 @@ body {
     display: contents;
   }
 
-  nav a{
+  nav {
     display: flex;                
     justify-content: space-around;    
-    align-items: center;            
+    align-items: center;  
+    /* background: #f8f8f8; Optionally uncomment if you want the entire nav bar to have this background */
+  
+  } 
+  nav a{
+    /* display: flex;                
+    justify-content: space-around;    
+    align-items: center;             */
     /* background: #f8f8f8;           */
-    padding: 0.5em;
 
     text-decoration: none;
     color: inherit;
     text-align: center;
     padding: 0.5em;
 
-    
+  
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom: 1px solid oklch(80% 3% 200);

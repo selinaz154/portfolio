@@ -49,9 +49,9 @@ nav a:hover, nav a.current {
 }
 
 /* Step 3 */
-input, textarea, button {
+grid-form, input, textarea, button {
   font: inherit;
-  /* margin: 0.50em ;  */
+  margin: 0.50em ; 
   width: 100%;
   box-sizing: border-box;
   /* margin-block: 15px; */

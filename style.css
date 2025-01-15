@@ -52,7 +52,8 @@ nav a:hover, nav a.current {
 input, textarea, button {
   font: inherit;
   margin: 0.5em 0; /* Add space around elements */
-  width: 100%
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .grid-form {

@@ -71,7 +71,7 @@ grid-form, input, textarea, button {
 }
 
 /* Step 4 */
-nav a[href="../index.html"] {
+nav a[href="index.html"] {
   border-bottom: 4px solid #ccc;
   padding-bottom: calc(0.5em - 4px); 
 }

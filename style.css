@@ -12,6 +12,7 @@ body {
     margin-inline: auto;
     padding: 1rem;
     margin-inline: max(1em, (100% - 100ch) / 2);
+    accent-color: var(--color-accent)
   }
 
   nav ul, nav li {

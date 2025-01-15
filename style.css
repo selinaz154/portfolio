@@ -1,6 +1,6 @@
-:root {
-  --color-accent: oklch(65% 50% 0); /* Define the accent color */
-}
+/* :root {
+  --color-accent: oklch(65% 50% 0); 
+} */
 
 
 body {
@@ -30,8 +30,6 @@ body {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom: 1px solid oklch(80% 3% 200);
-    /* background: #f8f8f8; Optionally uncomment if you want the entire nav bar to have this background */
-
   } 
 
   nav a{
@@ -139,7 +137,6 @@ body {
   background-color: #f9f9f9;
   line-height: 1.6;
 }
-
 
 
 h1, h2, h3 {

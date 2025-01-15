@@ -71,46 +71,51 @@ grid-form, input, textarea, button {
 }
 
 /* Step 4 */
-nav a[href="index.html"] {
-  border-bottom: 4px solid #ccc; /* Gray bottom border */
-  padding-bottom: calc(0.5em - 4px); /* Adjust padding to accommodate border */
-}
 
-nav a.current {
+/* nav a[href="index.html"] {
+  border-bottom: 4px solid #ccc;
+  padding-bottom: calc(0.5em - 4px); 
+} */
+
+/* nav a.current {
   border-bottom: 3px solid #ff00ff; 
-}
+} */
 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  gap: 20px; /* Adjust the space between the projects */
-  padding: 20px; /* Optional: adds padding inside the projects container */
+  gap: 20px; 
 }
 
-.project {
-  background: #f0f0f0; /* Example background color for visibility */
-  padding: 10px; /* Padding inside each project */
-  border: 1px solid #ccc; /* Border for each project */
+.projects article {
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
 }
+
+/* .project {
+  background: #f0f0f0; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+} */
 
 h2 {
-  margin: 0; /* Removes default margin */
+  margin: 0; 
 }
 
 .projects {
-  gap: 1em; /* Sets a consistent gap between all projects */
+  gap: 1em; 
 }
 
 h1 {
-  font-size: 2.5em; /* Significantly larger than body text */
+  font-size: 2.5em; 
 }
 
 h2 {
-  font-size: 2em; /* Larger but less than h1 */
+  font-size: 2em;
 }
 
-/* Apply default styles for all headings */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
-  text-wrap: balance; /* Ensures text is evenly distributed if wrapped */
+  text-wrap: balance; 
 }

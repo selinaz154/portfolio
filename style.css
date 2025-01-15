@@ -52,6 +52,7 @@ nav a:hover, nav a.current {
 input, textarea, button {
   font: inherit;
   margin: 0.5em 0; /* Add space around elements */
+  width: 100%
 }
 
 .grid-form {
@@ -66,10 +67,6 @@ input, textarea, button {
   grid-template-columns: subgrid;
   grid-column: 1 / -1; 
 }
-
-/* form {
-  
-} */
 
 
 /* Step 4 */

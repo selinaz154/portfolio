@@ -54,7 +54,7 @@ input, textarea, button {
   margin: 0.5em 0; /* Add space around elements */
   width: 100%;
   box-sizing: border-box;
-  margin-block: 15px;
+  /* margin-block: 15px; */
 }
 
 .grid-form {
@@ -69,7 +69,6 @@ input, textarea, button {
   grid-template-columns: subgrid;
   grid-column: 1 / -1; 
 }
-
 
 /* Step 4 */
 nav a[href="index.html"] {

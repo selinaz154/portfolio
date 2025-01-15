@@ -18,6 +18,10 @@ body {
     display: contents;
   }
 
+  .home-link {
+    border-bottom: 4px solid #ccc; /* Gray bar */
+}
+
   nav {
     display: flex;                
     justify-content: space-around;    
@@ -27,7 +31,7 @@ body {
     border-bottom-style: solid;
     border-bottom: 1px solid oklch(80% 3% 200);
     /* background: #f8f8f8; Optionally uncomment if you want the entire nav bar to have this background */
-  
+
   } 
 
   nav a{
@@ -40,12 +44,7 @@ body {
     color: inherit;
     text-align: center;
     padding: 0.5em;
-
-    border-bottom: 3px solid transparent; 
-
-
-  
-    
+    /* border-bottom: 3px solid transparent;  */
 }
 
 nav a.current {

@@ -51,7 +51,7 @@ nav a:hover, nav a.current {
 /* Step 3 */
 input, textarea, button {
   font: inherit;
-  margin: 0.5em 0; /* Add space around elements */
+  /* margin: 0.50em ;  */
   width: 100%;
   box-sizing: border-box;
   /* margin-block: 15px; */

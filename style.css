@@ -50,15 +50,15 @@ nav a.current {
   border-bottom: 3px solid #ff00ff; 
 } 
 
-:root {
+/* :root {
   border-bottom: 4px solid #ccc;
   padding-bottom: calc(0.5em - 4px); 
-}
+} */
 
-nav a:hover, nav a.current {
+/* nav a:hover, nav a.current {
   border-bottom: 4px solid var(--color-accent); 
   padding-bottom: calc(0.5em - 4px); 
-}
+} */
 
 nav a:hover, nav a.current {
   border-bottom: 4px solid var(--color-accent);

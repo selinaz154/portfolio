@@ -120,3 +120,41 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   text-wrap: balance; 
 }
+
+
+/* Step 5 */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+p, li {
+  font-size: 16px;
+}
+
+
+
+
+.article {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

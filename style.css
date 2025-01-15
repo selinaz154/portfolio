@@ -57,19 +57,19 @@ input, textarea, button {
 .grid-form {
   display: grid;
   grid-template-columns: auto 1fr;
-  
+  gap: 1em;
+  font-family: inherit;
 }
 
-fieldset {
+.subject, .email, .message{
   display: grid;
   grid-template-columns: subgrid;
   grid-column: 1 / -1; 
 }
 
-form {
-  gap: 1em;
-  font-family: inherit; /* Inherits the font family from the body or root element */
-}
+/* form {
+  
+} */
 
 
 /* Step 4 */

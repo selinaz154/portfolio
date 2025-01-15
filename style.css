@@ -64,7 +64,7 @@ input, textarea, button {
   font-family: inherit;
 }
 
-.subject, .email, .message{
+.subject, .email, .message, .button{
   display: grid;
   grid-template-columns: subgrid;
   grid-column: 1 / -1; 

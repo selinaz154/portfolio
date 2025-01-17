@@ -162,10 +162,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 } */
 
-body .cv{
-  background-color: #e40c0c;
+
+body.cv{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adds space between the columns */
+  padding: 20px; 
+  background-color: #d7efe5;
 }
 
+header {
+  grid-column: 1 / -1; /* Makes the header and sections span both columns */
+}
 h1, h2, h3 {
   font-weight: bold;
 }

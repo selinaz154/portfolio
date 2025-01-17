@@ -18,7 +18,7 @@ body {
     display: contents;
   }
 
-  .home-link {
+  .current {
     border-bottom: 0.4em solid #5e625f; 
 }  
 
@@ -42,6 +42,7 @@ body {
     color: inherit;
     text-align: center;
     padding: 0.5em;
+    width: 100%
     /* border-bottom: 3px solid transparent;  */
 }
 
@@ -161,6 +162,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 } */
 
+body .cv{
+  background-color: #e40c0c;
+}
 
 h1, h2, h3 {
   font-weight: bold;
@@ -168,6 +172,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 24px;
+ 
 }
 
 h2 {
@@ -182,7 +187,6 @@ p, li {
 }
 
 .article {
-  background-color: #fff;
   padding: 20px;
   margin-top: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);

@@ -72,11 +72,17 @@ nav a:hover {
 }
 
 /* Step 3 */
-grid-form, input, textarea, button {
+form{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+input, textarea, button {
   font: inherit;
-  margin: 0.50em ; 
+  /* margin: 0.50em ; 
   width: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box; */
   /* margin-block: 15px; */
 }
 
@@ -87,11 +93,22 @@ grid-form, input, textarea, button {
   /* font-family: inherit; */
 /* } */
 
-.subject, .email, .message, .button{
+label {
   display: grid;
   grid-template-columns: subgrid;
   grid-column: 1 / -1; 
+}
+
+/* .subject, .email, .message, .button{
+  
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1; 
   gap: 1em; 
+} */
+
+button{
+  grid-column: 1 / -1;
+
 }
 
 /* Step 4 */

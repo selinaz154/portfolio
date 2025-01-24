@@ -15,7 +15,6 @@ let pages = [
     { url: 'https://github.com/selinaz154', title: 'Github'}
   ];
 
-
 let currentLink = navLinks.find(
     (a) => a.host === location.host && a.pathname === location.pathname
 );
@@ -25,16 +24,13 @@ if (currentLink) {
     currentLink?.classList.add('current');
 }
 
-
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
     
-
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
-
   
     if (!ARE_WE_HOME && !url.startsWith('http')) {
         url = '../' + url;

@@ -82,3 +82,36 @@ select.addEventListener('input', function (event) {
     localStorage.colorScheme = event.target.value
   });
 
+  //lab 4
+  export async function fetchJSON(url) {
+    try {
+        // Fetch the JSON file from the given URL
+        const response = await fetch(url);
+
+
+    } catch (error) {
+        console.error('Error fetching or parsing JSON data:', error);
+    }
+
+    if (!response.ok) {
+        throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    return data; 
+
+}
+
+export function renderProjects(project, containerElement) {
+    // Your code will go here
+}
+
+article.innerHTML = `
+    <h3>${project.title}</h3>
+    <img src="${project.image}" alt="${project.title}">
+    <p>${project.description}</p>
+`;
+
+containerElement.appendChild(article);
+
+

@@ -107,29 +107,14 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
         console.error('Invalid container element provided.');
         return;
     } 
-
-
-    // if (!/^h[1-6]$/.test(headingLevel)) {
-    //     console.warn(`Invalid heading level "${headingLevel}". Defaulting to h2.`);
-    //     headingLevel = 'h2'; 
-    // }
-
     containerElement.innerHTML = ''; 
-    // makesure its container empty
+   
     
     project.forEach(project => {
         console.log('working?');
-        // const title = p.title || 'Untitled Project';
-        // const image = p.image || 'https://vis-society.github.io/labs/2/images/empty.svg';
-    
-        // const description = p.description || 'No description available.';
-
+        
         const article = document.createElement('article');
-        // article.innerHTML = `
-        // <${headingLevel}>${title}</${headingLevel}>
-        // <img src="${image}" alt="${title}" onerror="this.src='fallback-image.jpg';">
-        // <p>${description}</p>
-        // `;
+       
         article.innerHTML = `
         <h3>${project.title}</h3>
         <img src="${project.image}" alt="${project.title}">
@@ -142,7 +127,6 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
 
 
 export function countProjects(project, titleElement) {
-    // Check if projects is an array
     if (Array.isArray(project)) {
         const projectCount = project.length;
         titleElement.textContent = `${projectCount} Projects`;

@@ -1,7 +1,7 @@
-import { fetchJSON, renderProjects } from '../global.js';
+import { fetchJSON, renderProjects } from './global.js';
 // import { fetchJSON, renderProjects, fetchGithubData } from '../global.js';
 
-const projects = await fetchJSON('../lib/projects.json');
+const projects = await fetchJSON('./lib/projects.json');
 const latestProjects = projects.slice(0, 3);
 console.log(latestProjects);
 const projectsContainer = document.querySelector('.projects');
@@ -10,10 +10,9 @@ renderProjects(latestProjects, projectsContainer, 'h2');
 
 //3.2
 
-import { fetchGitHubData } from '../global.js'; 
+import { fetchGitHubData } from '/global.js'; 
 const githubData = await fetchGitHubData('selinaz154');
 const profileStats = document.querySelector('#profile-stats');
-// console.log('hi');
 
 
 //step 5 (modify this)

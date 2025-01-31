@@ -51,7 +51,7 @@ for (let p of pages) {
         a.target = '_blank'; // Open in a new tab if it is external
     }
    
-
+    nav.append(a);
 }
 
 document.body.insertAdjacentHTML(
@@ -65,9 +65,10 @@ document.body.insertAdjacentHTML(
                 <option value="dark">Dark</option>
             </select>
         </label>`
-    );
+);
 
           //step 4.5 
+
 let select = document.querySelector('select')
 
 const savedColorScheme = localStorage.getItem('colorScheme');
@@ -95,12 +96,9 @@ select.addEventListener('input', function (event) {
         return data; 
 
 
-
     } catch (error) {
         console.error('Error fetching or parsing JSON data:', error);
     }
-
-  
 
 }
 
@@ -108,15 +106,15 @@ export function renderProjects(project, containerElement) {
     if (!(containerElement instanceof HTMLElement)) {
         console.error('Invalid container element provided.');
         return;
-    } // make sure containerElement is a valid DOM
+    } 
 
-    // Ensure headingLevel is valid (only allow h1-h6)
+
     if (!/^h[1-6]$/.test(headingLevel)) {
         console.warn(`Invalid heading level "${headingLevel}". Defaulting to h2.`);
-        headingLevel = 'h2'; // Default to h2 if input is invalid
+        headingLevel = 'h2'; 
     }
 
-    containerElement.innerHTML = ''; //outside loop
+    containerElement.innerHTML = ''; 
     // makesure its container empty
     project.forEach(p => {
         const title = p.title || 'Untitled Project';
@@ -135,14 +133,6 @@ export function renderProjects(project, containerElement) {
     });
 }
 
-article.innerHTML = `
-    <h3>${project.title}</h3>
-    <img src="${project.image}" alt="${project.title}">
-    <p>${project.description}</p>
-`;
-
-containerElement.appendChild(article);
-
 
 export function countProjects(project, titleElement) {
     // Check if projects is an array
@@ -156,5 +146,5 @@ export function countProjects(project, titleElement) {
 
 //step 3.2
 export async function fetchGitHubData(username) {
-    return fetchJSON(`https://api.github.com/users/${username}`);
+    return fetchJSON(`https://api.github.com/users/${selinaz154}`);
   }

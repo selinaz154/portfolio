@@ -10,7 +10,7 @@ renderProjects(latestProjects, projectsContainer, 'h2');
 
 //3.2
 
-import { fetchGitHubData } from '../global.js'; 
+import { fetchGitHubData } from './global.js'; 
 const githubData = await fetchGitHubData('selinaz154');
 const profileStats = document.querySelector('#profile-stats');
 

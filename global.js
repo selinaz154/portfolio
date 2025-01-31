@@ -102,31 +102,38 @@ select.addEventListener('input', function (event) {
 
 }
 
-export function renderProjects(project, containerElement) {
+export function renderProjects(project, containerElement, headingLevel = 'h2') {
     if (!(containerElement instanceof HTMLElement)) {
         console.error('Invalid container element provided.');
         return;
     } 
 
 
-    if (!/^h[1-6]$/.test(headingLevel)) {
-        console.warn(`Invalid heading level "${headingLevel}". Defaulting to h2.`);
-        headingLevel = 'h2'; 
-    }
+    // if (!/^h[1-6]$/.test(headingLevel)) {
+    //     console.warn(`Invalid heading level "${headingLevel}". Defaulting to h2.`);
+    //     headingLevel = 'h2'; 
+    // }
 
     containerElement.innerHTML = ''; 
     // makesure its container empty
-    project.forEach(p => {
-        const title = p.title || 'Untitled Project';
-        const image = p.image || 'https://vis-society.github.io/labs/2/images/empty.svg';
-        //image coming
-        const description = p.description || 'No description available.';
+    
+    project.forEach(project => {
+        console.log('working?');
+        // const title = p.title || 'Untitled Project';
+        // const image = p.image || 'https://vis-society.github.io/labs/2/images/empty.svg';
+    
+        // const description = p.description || 'No description available.';
 
         const article = document.createElement('article');
+        // article.innerHTML = `
+        // <${headingLevel}>${title}</${headingLevel}>
+        // <img src="${image}" alt="${title}" onerror="this.src='fallback-image.jpg';">
+        // <p>${description}</p>
+        // `;
         article.innerHTML = `
-        <${headingLevel}>${title}</${headingLevel}>
-        <img src="${image}" alt="${title}" onerror="this.src='fallback-image.jpg';">
-        <p>${description}</p>
+        <h3>${project.title}</h3>
+        <img src="${project.image}" alt="${project.title}">
+        <p>${project.description}</p>
         `;
 
         containerElement.appendChild(article);
@@ -146,5 +153,5 @@ export function countProjects(project, titleElement) {
 
 //step 3.2
 export async function fetchGitHubData(username) {
-    return fetchJSON(`https://api.github.com/users/${selinaz154}`);
+    return fetchJSON(`https://api.github.com/users/${username}`);
   }

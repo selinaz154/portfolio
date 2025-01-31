@@ -198,3 +198,44 @@ p, li {
   font-size: 80%
     /* Use font-size to adjust the size */
 }
+
+
+/* Lab 4*/
+
+
+#profile-stats {
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+
+}
+#profile-stats h2{
+  margin-top: 2px;
+  margin-bottom:6px;
+  
+}
+
+#profile-stats dl {
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  
+  
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  text-align: center;
+}
+
+#profile-stats dt {
+  grid-row: 1;
+
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  margin: 0;
+}
+
+.spacer {
+  height: 20px;  
+}

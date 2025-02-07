@@ -239,3 +239,12 @@ p, li {
 .spacer {
   height: 20px;  
 }
+
+/* lab 5 */
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}

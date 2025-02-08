@@ -209,6 +209,7 @@ p, li {
   background-color: #f4f4f4;
 
 }
+
 #profile-stats h2{
   margin-top: 2px;
   margin-bottom:6px;
@@ -247,4 +248,76 @@ p, li {
   margin-block: 2em;
 
   overflow: visible;
+}
+
+
+/* 5.1 */
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+}
+
+.container {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically align the pie chart and legend */
+  gap: 1.5em; /* Space between the chart and legend */
+  max-width: 800px; /* Optional: Adjust container width */
+  margin: auto; /* Centering */
+}
+
+/* Pie chart should not shrink */
+.container svg {
+  flex: 0 0 auto; /* Prevents the chart from shrinking */
+  width: 250px; /* Adjust size as needed */
+  height: 250px;
+}
+
+.legend {
+  display: grid;
+  flex: 1;
+  max-width: 50%;
+  margin-top: 20px;
+  padding: 2px;
+  border: 2px double rgb(67, 74, 78);
+  border-radius: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.legend li .swatch {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.80em;
+  font-size: 14px;
+}
+
+.searchBar {
+  width: 100%; /* Makes the input span the full width */
+  padding: 0.75em; /* Adds spacing for better UX */
+  font-size: 16px; /* Increases text size for readability */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Smooth rounded corners */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
 }
